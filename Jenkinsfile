@@ -32,3 +32,4 @@ echo 'Build and deployment successful!'
 failure { echo ‘Build Failed’
 }
 }
+}
