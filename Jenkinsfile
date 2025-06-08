@@ -32,7 +32,7 @@ success {
 echo 'Build and deployment successful!'
 }
 failure { 
-  echo 'Build Failed’
+  echo 'Build Failed'
 }
 }
 }
