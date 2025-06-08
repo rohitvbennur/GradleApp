@@ -4,7 +4,9 @@ tools {
 gradle 'Gradle' // Ensure this matches the name configured in Jenkins
 jdk 'JDK'
 }
-stages { stage(‘Checkout’){steps{
+stages { 
+  stage(‘Checkout’){
+    steps{
 git branch: 'master', url: 'https://github.com/rohitvbennur/GradleApp.git'
 }
 }
@@ -29,7 +31,8 @@ post {
 success {
 echo 'Build and deployment successful!'
 }
-failure { echo ‘Build Failed’
+failure { 
+  echo 'Build Failed’
 }
 }
 }
